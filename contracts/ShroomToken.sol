@@ -1,12 +1,12 @@
-// SPDX-License-Identifier: MIT
+/ SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract ShroomCoin is ERC20, Ownable {
+contract ShroomToken is ERC20, Ownable {
     constructor() 
-        ERC20("ShroomCoin", "SHRM")
+        ERC20("ShroomToken", "SHRM")
         Ownable(msg.sender)
     {}
     
