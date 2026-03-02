@@ -12,16 +12,16 @@ INFURA_URL = os.getenv('INFURA_URL')
 w3 = Web3(Web3.HTTPProvider(INFURA_URL))
 
 
-with open('ShroomCoin.abi.json') as f:
+with open('ShroomToken.abi.json') as f:
     abi = json.load(f)
 
-with open('ShroomCoin.bin-runtime') as f:
+with open('ShroomToken.bin-runtime') as f:
     bytecode = f.read()
 
-ShroomCoin = w3.eth.contract(abi=abi, bytecode=bytecode)
+ShroomToken = w3.eth.contract(abi=abi, bytecode=bytecode)
 
 nonce = w3.eth.get_transaction_count(ACCOUNT_ADDRESS)
-transaction = ShroomCoin.constructor().build_transaction({
+transaction = ShroomToken.constructor().build_transaction({
     'from': ACCOUNT_ADDRESS,
     'nonce': nonce,
     'gas': 2_500_000,
