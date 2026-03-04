@@ -8,7 +8,7 @@ load_dotenv()
 PRIVATE_KEY = os.getenv('PRIVATE_KEY')
 ACCOUNT_ADDRESS = os.getenv('ACCOUNT_ADDRESS')
 INFURA_URL = os.getenv('INFURA_URL')
-CHAIN_ID = os.getenv('CHAIN_ID')
+CHAIN_ID = int(os.getenv('CHAIN_ID'))
 
 w3 = Web3(Web3.HTTPProvider(INFURA_URL))
 
