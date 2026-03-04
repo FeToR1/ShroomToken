@@ -33,7 +33,7 @@ transaction = ShroomToken.constructor().build_transaction({
 signed_tx = w3.eth.account.sign_transaction(transaction, PRIVATE_KEY)
 
 tx_hash = w3.eth.send_raw_transaction(signed_tx.raw_transaction)
-print(f"Transaction sent! hash: {tx_hash.hex()}")
+print(f"Transaction sent, hash: {tx_hash.hex()}")
 
 tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
 print(f"Contract deployed: {tx_receipt.contractAddress}")

@@ -28,9 +28,9 @@ def transfer(to, amount):
     })
     signed = w3.eth.account.sign_transaction(tx, os.getenv('PRIVATE_KEY'))
     tx_hash = w3.eth.send_raw_transaction(signed.raw_transaction)
-    print(f"Sent! Hash: {tx_hash.hex()}")
+    print(f"Sent, hash: {tx_hash.hex()}")
     w3.eth.wait_for_transaction_receipt(tx_hash)
-    print("Confirmed!")
+    print("Confirmed")
 
 def mint(amount):
     tx = contract.functions.mint(
@@ -45,9 +45,9 @@ def mint(amount):
     })
     signed = w3.eth.account.sign_transaction(tx, os.getenv('PRIVATE_KEY'))
     tx_hash = w3.eth.send_raw_transaction(signed.raw_transaction)
-    print(f"Minted! Hash: {tx_hash.hex()}")
+    print(f"Minted, hash: {tx_hash.hex()}")
     w3.eth.wait_for_transaction_receipt(tx_hash)
-    print("Confirmed!")
+    print("Confirmed")
 
 def burn(amount):
     tx = contract.functions.burn(
@@ -61,9 +61,9 @@ def burn(amount):
     })
     signed = w3.eth.account.sign_transaction(tx, os.getenv('PRIVATE_KEY'))
     tx_hash = w3.eth.send_raw_transaction(signed.raw_transaction)
-    print(f"Burned! Hash: {tx_hash.hex()}")
+    print(f"Burned, hash: {tx_hash.hex()}")
     w3.eth.wait_for_transaction_receipt(tx_hash)
-    print("Confirmed!")
+    print("Confirmed")
 
 if __name__ == '__main__':
     cmd = sys.argv[1] if len(sys.argv) > 1 else 'help'
