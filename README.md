@@ -22,10 +22,22 @@ python3 scripts/compile_contract.py
 python3 scripts/deploy_contract.py
 ```
 
-## Test contract
+## Interact with contract
 
-```
-python3 scripts/interact_contract.py
+Available commands:
+
+```bash
+# Check balance (default: your account)
+python3 scripts/interact_contract.py balance [address]
+
+# Send tokens to another address
+python3 scripts/interact_contract.py transfer <to_address> <amount>
+
+# Mint tokens to your account (only owner)
+python3 scripts/interact_contract.py mint <amount>
+
+# Burn your tokens
+python3 scripts/interact_contract.py burn <amount>
 ```
 
 # Description 
