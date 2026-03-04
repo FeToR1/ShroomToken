@@ -30,9 +30,9 @@ python3 interact_contract.py
 
 # Description 
 
-Kutergin Fedor (0x9d3478c1deA23064a72d5405FAB5d5955c9f72f0)
-Ioffe Alexander (0x53Cb4c128B7dc3CD1F763aC011dE34817a23f244),
-Chernyaev Maxim (0x6f597922E1225e3ac3Ab802c5aa9056ed9672201)
+1. Kutergin Fedor (0x9d3478c1deA23064a72d5405FAB5d5955c9f72f0)
+2. Ioffe Alexander (0x53Cb4c128B7dc3CD1F763aC011dE34817a23f244)
+3. Chernyaev Maxim (0x6f597922E1225e3ac3Ab802c5aa9056ed9672201)
 
 CHAIN_ID=11155111 - sepolia testnet
 
