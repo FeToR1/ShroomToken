@@ -15,7 +15,7 @@ w3 = Web3(Web3.HTTPProvider(INFURA_URL))
 print(w3.from_wei(w3.eth.get_balance(ACCOUNT_ADDRESS), 'ether'))
 with open('ShroomToken.abi.json') as f:
     abi = json.load(f)
-with open('ShroomToken.bin-runtime') as f:
+with open('ShroomToken.bin') as f:
     bytecode = f.read()
 
 ShroomToken = w3.eth.contract(abi=abi, bytecode=bytecode)
