@@ -13,11 +13,11 @@ pip install -r requirements.txt
 ## Compile contract
 
 ```
-python3 scripts/compile_contract.py
+python3 compile_contract.py
 ```
 
 ## Deploy contract
 
 ```
-python3 scripts/deploy_contract.py
+python3 deploy_contract.py
 ```
