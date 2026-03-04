@@ -38,7 +38,7 @@ CHAIN_ID=11155111 - sepolia testnet
 
 1. Got ETH from faucet https://cloud.google.com/application/web3/faucet/ethereum/sepolia
 
-![fetor_wallet](pic/fetor_wallet.png)
+<img src="pic/fetor_wallet.png" width="600">
 
 2. Compiled contract
 3. Deployed contract
@@ -50,7 +50,7 @@ Contract deployed: 0xa5Ea4345f953387b35cc139266CE972A7126CF8a
 
 https://sepolia.etherscan.io/address/0xa5Ea4345f953387b35cc139266CE972A7126CF8a
 
-![contract_deployed](pic/contract_deployed.png)
+<img src="pic/contract_deployed.png" width="600">
 
 4. Tested contract
 
@@ -87,6 +87,6 @@ https://sepolia.etherscan.io/address/0xa5Ea4345f953387b35cc139266CE972A7126CF8a
 <<< Balance: 9490 SHRM
 ```
 
-![amber_wallet](pic/amber_wallet.png)
+<img src="pic/amber_wallet.jpg" width="600">
 
-![contract_transactions](pic/contract_transactions.png)
+<img src="pic/contract_transactions.png" width="600">
