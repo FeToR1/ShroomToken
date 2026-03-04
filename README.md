@@ -87,6 +87,6 @@ https://sepolia.etherscan.io/address/0xa5Ea4345f953387b35cc139266CE972A7126CF8a
 <<< Balance: 9490 SHRM
 ```
 
-![amber_wallet](pic/amber_wallet.jpg)
+![amber_wallet](pic/amber_wallet.png)
 
 ![contract_transactions](pic/contract_transactions.png)
