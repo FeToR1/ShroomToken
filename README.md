@@ -50,10 +50,13 @@ CHAIN_ID=11155111 - sepolia testnet
 
 1. Got ETH from faucet https://cloud.google.com/application/web3/faucet/ethereum/sepolia
 
+Kutergin Fedor wallet
+
 <img src="pic/fetor_wallet.png" width="400">
 
 2. Compiled contract
-3. Deployed contract
+3. Got Infura API key
+4. Deployed contract
 
 ```
 Transaction sent, hash: 40e9ac3fc1de689035ff0940c757c2ba9ce7c5ec15c66519639c89739bda322a
@@ -64,7 +67,7 @@ https://sepolia.etherscan.io/address/0xa5Ea4345f953387b35cc139266CE972A7126CF8a
 
 <img src="pic/contract_deployed.png" width="600">
 
-4. Tested contract
+5. Tested contract
 
 ```
 >> python3 interact_contract.py balance  
@@ -98,6 +101,8 @@ https://sepolia.etherscan.io/address/0xa5Ea4345f953387b35cc139266CE972A7126CF8a
 >>> python3 interact_contract.py balance
 <<< Balance: 9490 SHRM
 ```
+
+Ioffe Alexander wallet
 
 <img src="pic/amber_wallet.png" width="600">
 
